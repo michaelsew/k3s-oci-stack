@@ -4,7 +4,7 @@ terraform {
       source = "oracle/oci"
     }
   }
-  required_version = ">= 0.15"
+  required_version = ">= 0.15.1"
 }
 
 provider "oci" {
@@ -12,7 +12,7 @@ provider "oci" {
   tenancy_ocid     = var.tenancy_ocid
   user_ocid        = var.user_ocid
   fingerprint      = var.fingerprint
-  private_key_path = var.private_key_path
+  private_key      = var.private_key
 }
 
 module "network" {
