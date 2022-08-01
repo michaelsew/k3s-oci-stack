@@ -8,9 +8,15 @@ variable "fingerprint" {
   type        = string
 }
 
-variable "private_key_path" {
-  description = "The path to the private key to use for signing"
+variable "private_key" {
+  description = "text of private key (~/.ssh/id_rsa.pem) to connect to OCI"
   type        = string
+  default     = ""
+
+variable "private_key_path" {
+  description = "The path to the private key to use for signing. Only used if private_key is not supplied."
+  type        = string
+  default     = ""
 }
 
 variable "region" {
