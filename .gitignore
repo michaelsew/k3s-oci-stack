@@ -5,4 +5,5 @@
 *.tfstate
 *.hcl
 *.info
+terraform_local_test.tf
 *.tfstate.backup
